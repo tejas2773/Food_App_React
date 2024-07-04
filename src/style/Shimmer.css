@@ -1,0 +1,13 @@
+.shimmer-container{
+    display: flex;
+    justify-content:space-around;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+
+.shimmer-card{
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    background-color:gray;
+}

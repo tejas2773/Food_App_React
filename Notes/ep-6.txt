@@ -1,0 +1,8 @@
+fetching api:-
+            type 1: loading page => fetching api (wait for data)=> rendering data on page.
+            type 2:-loading page => rendering skeleton of page => fetching api (wait for data)=> rendering data on page.
+
+///////////////////////////imp note- mostly 2nd type used to fetching api for faster result./////////////////////////////////////
+
+
+shimmer UI - it is fake UI is display till api fetching data.

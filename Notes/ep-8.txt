@@ -1,0 +1,31 @@
+optimizing app -
+    -components are build seperately 
+    -each component have only 1 fuctionality by using custom hooks i.e (it will fetching or display data. not doing 2 things at a time)
+    -by using lazy loading or on demand loading
+
+lazy loading-
+    importing component when it have to used.
+
+
+Higher order components -
+        it takes components,modify components in callback function and display components
+
+Redux- it stores all data globally and used where-ever need it.
+        eg: Wrinting data :- when clicked on "add-to-card" it dispatch "action" and call a "Reducer fn" and store data in redux. 
+           Reading Data :- while reading data from Redux it uses "Selector".
+
+Testing- 
+    1. Unit Testing - Testing each component 
+    2. Intergrating Testing - tesing 2 or more component 
+    3. End to End Testing
+
+Setting up Testing in app :-
+        -Install React Testing Library
+        -Install Jest
+        -Install Babel dependencies 
+        -Configure Babel
+        -Configure parcel config file to disable default babel transpilation
+        -Jest configuration
+        -Install jsdom Library
+        -Install @Babel/preset-react : to make JSX work in test cases
+        -Include @babel/preset-react inside my babel config

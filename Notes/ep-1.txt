@@ -1,0 +1,50 @@
+what is react-
+        -React is a JavaScript library created by Facebook
+        -tool for building UI components
+
+jsx-:
+        -jsx and react are different .
+        -jsx is language,which helps to write code in react in simple format.
+        -it has html & javascript like syntax.
+        -eg:
+        const element = <h1>Hello World!</h1>
+        - inside of {} we can do js operation.
+
+Babel:
+        it is js compiler.
+        used to convert JSX into JavaScript. because react recognises js.
+
+ReactDom.render():
+        is used to render (display) HTML elements:
+
+React Elements:
+        React elements are javascript objects.
+        React elements are immutable. They cannot be changed.
+        The only way to change a React element is to render a new element every time:
+        eg:
+            const element = <h1>Hello React!</h1>
+
+React Components:
+        React components are JavaScript functions.
+        it can re-render, so we put React Elements inside of it.
+        it gives javascript object ( object renders structure of UI)
+        eg:
+            const HeadingComponent=()=>(
+                <div>
+                    <h1 className="heading">Namaste react</h1>
+                    {100+5}
+                </div>
+            )
+
+Actual Dom- "div,img,p,span" etc. tags are actual Dom
+
+virtual Dom/object- virtual representation of acutal DOm or structure of actual Dom.
+
+why react is so fast?
+    -it can do fast DOM manipulation or operation.
+    -it keeps UI link with data-link layer.
+    -react creates "virtual Dom" of "actual Dom" and performes DOM manipulation on it .
+
+React uses "Diff algorithm"
+                    -when there is changed in react object
+                    - it recognises differnce betn old virtual DOm and New virtual Dom and render on UI.

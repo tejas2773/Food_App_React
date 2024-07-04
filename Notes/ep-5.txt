@@ -1,0 +1,49 @@
+2 types of exports/imports:     1.deafult exports/import:-
+                                    export default Body;  (at the bottom of page)
+                                    import Body from "./components/Body";
+
+                                2.named export/imports:- 
+                                    export const Body=()=>{
+                                        return(
+                                                //code
+                                            )
+                                        }
+                                    import { CDN_URL } from "../utils/constants";
+
+                                    
+ ///////////////////////////////////////////////////imp note//////////////////////////////////////////////////////////////////////
+ when 2 or more times have to export function then use 2nd method to export.beacause 1st method export only 1 function component per file,no other function component export from same file.
+
+
+///////////////////////////////////////////////////////imp notes//////////////////////////////////////////////////////////
+suppose if we want to changed existed value of variable by javascript logic, then it changes value succesfully but react doesnot track the changing value and rendering on UI.that`s why "useState Hooks" used to track changing value and re-render react components.
+                                    (i.e: if any changes occurs react have to re-render UI)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+React Hooks-: it is javascript fn. it takes value i.e null or any & gives data.
+
+    Types: 1. useState()    -gives array of "state variable" and "trigerred fn" .
+                            -"state variable" keeps track state of data and stored new value in it.
+                            -"triggered fn" modify data & re-render react component.thats how new value is stored inside of state variable even it is "const"
+
+                            -syntax:
+                                const [state variable,trigerred fn]=useState(default data)
+                            -eg:
+                                const [listofrestaurent,setlistofrestaurent]=useState(resList)
+                            explaination:
+                                -"listofrestaurent" has deafult data "resList".
+                                -whenever call "setlistofrestaurent" it changed data of "listofrestaurent"
+
+           2. useEffect()   -it performed after react component is rendered.
+                            -it has 2 arguments -   ()=> callback fn 
+                                                    []   dependency array (it changes the behaviour of useEffect )
+                            -eg: useEffect(()=>{
+                                        fetchData()
+                                    },[])
+                            
+                            -conditions-: 1. if no dependency array => useEffect is called on react components render 
+                                          2. if dependency array is empty => useEffect is called only once when react component render
+                                          3. if dependency array is [btn] => useEffect is called when "btn" component changes 
+
+///////////////////////////////////////////////imp note////////////////////////////////////////////////////////////////////////
+            -state updates happen only within event handlers, hooks(useEffect or custom), or lifecycle methods, not directly in the render body
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

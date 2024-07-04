@@ -1,0 +1,8 @@
+package.json- it is configuration for npm . it keeps tracks of package version and other stuff.
+package-lock.json- it keeps exact approx. version of package.
+node modules - it is database which have packages which are fetches to in our project.
+
+(on github does not put node modules only package.json & package-lock.json have to put.)
+
+npm - to install package 
+npx - to execute our package 

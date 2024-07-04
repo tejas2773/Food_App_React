@@ -1,0 +1,8 @@
+Routing-:
+1) static Routing
+    <createBrowserRouter/> - it have lists of path
+    <Outlet /> - it replaces children components without rendering parent componet
+    <Link to={} /> - it renders page without refreshing page.
+
+2) Dynamic Routing
+    

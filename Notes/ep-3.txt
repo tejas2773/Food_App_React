@@ -1,0 +1,22 @@
+---------------------------------------------------------imp note--------------------------------------------------------------
+{}- inside of we can put javascript code 
+
+jsx-:jsx and react are different .
+    jsx is language,which helps to write code in react in simple format.
+    it has html like syntax.
+
+React component:-  1. class component
+                   2. functional components
+
+fuctional component: 
+                    1. all code is bind into <></> or <div></div>
+                    2. First letter of function should be capital.
+                    3. functiona call : <HeadingComponent></HeadingComponent>, <HeadingComponent /> , {HeadingComponent()}
+                    4.eg:-
+const HeadingComponent=()=>(
+    <div>
+        <h1 className="heading">Namaste react</h1>
+        {100+5}
+    </div>
+)
+

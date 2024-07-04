@@ -1,0 +1,67 @@
+/* .res-logo{
+    width: 100%;
+}
+
+.res-card{
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+}
+
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+} */
+
+.res-container a{
+    text-decoration: none;
+}
+
+.res-card {
+    width: 100%;
+    max-width: 300px; /* Adjust maximum width as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.res-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.res-logo {
+    width: 100%;
+    max-height: 200px; /* Adjust maximum height as needed */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.res-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.res-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.res-card p:first-child {
+    margin-top: 0;
+}
+
+.res-card p:last-child {
+    margin-bottom: 0;
+}
+

@@ -1,0 +1,29 @@
+Props(property)-: 
+                it is argument/parameter,passing data to one react component to another dynamically.
+                eg:-  resName,cuisine 
+
+eg:
+
+const RestaurantCard = (props) => {
+    const { resName, cuisine } = props;
+    return (
+        <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+            <img className="res-logo" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?resize=768,574" alt="" />
+            <h3>{resName}</h3>
+            <p>{cuisine}</p>
+            <p>4.4 stars</p>
+        </div>
+    )
+}
+
+const Body = () => {
+    return (
+        <div className="body">
+            <div className="Search">Search</div>
+            <div className="res-container">
+                <RestaurantCard resName="kalyani bhel" cuisine="italian pasta" />
+                <RestaurantCard resName="KFC" cuisine="chicken,fries" />
+            </div>
+        </div>
+    )
+}

@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Optional: Add background color */
+}
+
+.logo-container {
+    flex: 0 0 auto; /* Prevent logo from growing */
+}
+
+.logo {
+    width: 120px;
+    height: auto; /* Ensure logo scales properly */
+}
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items ul {
+    display: flex;
+    gap: 20px; /* Adjusted for better spacing */
+    list-style-type: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.nav-items ul li {
+    font-size: 16px;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-items ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.nav-items ul li button {
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-items ul li button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
