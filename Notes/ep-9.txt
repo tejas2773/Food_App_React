@@ -1,0 +1,10 @@
+
+
+action has 2 arguments: - payload (data)
+                        - type (string, int, char etc.)
+
+state:-
+        - we store "action.payload" (data) in state variable
+
+initial state :- All initial data store in state .
+

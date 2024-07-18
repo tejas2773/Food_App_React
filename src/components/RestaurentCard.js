@@ -1,8 +1,12 @@
 import { CDN_URL } from "../utils/constants";
 import "../style/RestaurentCard.css"
+
 const RestaurantCard = (props) => {
     const { resData } = props;   // destructured into resData.
     const { name, cuisines, avgRating, costForTwo, cloudinaryImageId } = resData.info  // destructuring into different properties
+
+    
+
     return (
         <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
             <img className="res-logo" src={CDN_URL + cloudinaryImageId} alt="" />

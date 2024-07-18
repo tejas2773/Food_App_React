@@ -7,14 +7,17 @@ import Contact from "./components/Contacts";
 import RestaurentMenu from "./components/RestaurentMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Cart from "./components/Cart";
-
+import { Provider } from "react-redux";
+import store from "./Redux/store";
 
 const AppLayout = () => {
     return (
-        <div className="app">
-            <Header />
-            <Outlet />   {/** outlet helps to render children components without rendering parent componet (<applayout/>) */}
-        </div>
+        <Provider store={store}>
+            <div className="app">
+                <Header />
+                <Outlet />   {/** outlet helps to render children components without rendering parent componet (<applayout/>) */}
+            </div>
+        </Provider>
     )
 }
 
@@ -50,7 +53,7 @@ const appRouter = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-    
-        <RouterProvider router={appRouter} />
-   
+
+    <RouterProvider router={appRouter} />
+
 )
